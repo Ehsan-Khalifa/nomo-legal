@@ -3,7 +3,7 @@ title: NoMo — Privacy Policy
 ---
 # NoMo — Privacy Policy
 
-**Last updated: 18 July 2026**
+**Last updated: 23 July 2026**
 
 This Privacy Policy explains what personal data the NoMo mobile app ("NoMo", the
 "App", "we", "us", "our") collects, why, where it goes, and the choices you have.
@@ -78,10 +78,10 @@ and we do not knowingly collect data from anyone under 18.
   or UPI details.** Your account ID is shared with RevenueCat so your
   entitlement follows your account.
 
-### g. Diagnostics (only if enabled)
-- If crash/error diagnostics are configured, technical crash and performance data
-  is sent to Sentry with **personal-data scrubbing enabled** (`sendDefaultPii =
-  false`) and only a sample of performance traces. We do **not** use analytics or
+### g. Diagnostics
+- Technical crash and performance data is sent to Sentry with **personal-data
+  scrubbing enabled** (`sendDefaultPii = false`) and only a sample of
+  performance traces. We do **not** use analytics or
   advertising SDKs, and we do not build advertising profiles.
 
 ## 4. Where your data is stored
@@ -112,7 +112,7 @@ Each has its own privacy policy.
 | **Supabase** | Your account, profile, and the synced data in Section 4 | Auth, database, file storage, real-time Live Share |
 | **Open-Meteo** | Your coordinates (no account, no API key) | Weather, UV, air quality |
 | **RevenueCat + Google Play Billing** | Your account ID and purchase status | Subscriptions |
-| **Sentry** (if configured) | Technical crash/diagnostic data, PII-scrubbed | Stability monitoring |
+| **Sentry** | Technical crash/diagnostic data, PII-scrubbed | Stability monitoring |
 | **Your mobile carrier** | The SMS you send (your location link + message) | Delivering safety texts |
 | Other **Live Share participants** | Your name, live location, SOS/arrival status | The sharing feature you activated |
 
@@ -143,15 +143,22 @@ We do **not** sell your personal data or share it for advertising.
 - **Device data** stays until you delete it in the App, or uninstall/clear the
   App. History is capped at the most recent 200 entries.
 - **Server data** is kept for as long as your account exists and is deleted when
-  you delete your account (see Section 8). **[Confirm any fixed retention periods
-  for backups or diagnostics — e.g. Sentry's default event retention.]**
+  you delete your account (see Section 8).
+- **Crash/diagnostic events** at Sentry are retained for 90 days (Sentry's
+  standard retention) and then deleted automatically.
 
 ## 8. Your choices and rights
 
-- **Delete your account and data.** You can permanently delete your account from
-  within the App. This cascades on our servers to remove your profile, saved
-  places, alarms, history, settings, and emergency contacts. **Deletion is
-  irreversible.**
+- **Delete your account and data.** In the App: **Profile → Delete account**.
+  This cascades on our servers to remove your profile, saved places, alarms,
+  history, settings, emergency contacts, and your profile photo, and clears the
+  App's data on your device. **Deletion is irreversible.** If you no longer
+  have the App installed, request deletion at
+  [delete-account.html](delete-account.html) or by emailing us (Section 11)
+  from the address on the account.
+- **Delete some data without deleting your account.** Saved places, alarms,
+  emergency contacts, and fences can each be removed individually inside the
+  App; the change syncs to our servers.
 - **Sign out** at any time; anonymous-mode and device data can be cleared by
   clearing/uninstalling the App.
 - **Manage permissions** (location, notifications, SMS, contacts) in your device
